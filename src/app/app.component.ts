@@ -9,10 +9,6 @@ import { CartService } from "./services/cart.service";
   standalone: true,
   imports: [RouterModule, HeaderComponent],
   templateUrl: "./app.component.html",
-  // template: `
-  //   <app-header [cart]="cart"></app-header>
-  //   <router-outlet></router-outlet>
-  // `,
   styles: [],
 })
 export class AppComponent implements OnInit {
