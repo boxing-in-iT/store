@@ -14,14 +14,8 @@ import { Product } from "../../../../models/product.model";
 })
 export class ProductBoxComponent {
   @Input() fullWidthMode = false;
-  product: Product | undefined = {
-    id: 1,
-    title: "snickers",
-    price: 1500,
-    category: "shoes",
-    description: "sfdsfdknl;fnsfdsfsdsdf",
-    image: "https://via.placeholder.com/150",
-  };
+  @Input() product: Product | undefined;
+
   @Output() addToCart = new EventEmitter();
 
   onAddToCart(): void {
